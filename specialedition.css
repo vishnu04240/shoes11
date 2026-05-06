@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.header {
+    height: 12vh;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.363);
+    position: fixed;
+}
+
+.header .logo {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+}
+
+.header .option {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s;   /* to do transition */
+}
+
+/* to do transition */
+.header a:hover{
+    color: rgba(255, 0, 0, 0.755);
+    transform: scale(1.0); 
+    text-shadow: rgba(0, 0, 0, 0.358) 2px 2px 5px;
+}
+.header ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 11vh;
+    width: 69vw;
+    font-size: large;
+}
+
+.headinglogo {
+    height: 15vh;
+    width: 100%;
+    background-color: black;
+    margin-bottom: 60px;
+    margin-top: 90px;
+}
+
+.headinglogo img {
+    height: 90%;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    margin-top: 20px;
+    
+}
+.poster{
+    height: 70vh;
+    background-color: black;
+}
+
+.productcontainer {
+    margin: auto;
+    margin-top: 20px;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+
+}
+
+.productcontainer .productimage{
+
+    height: 400px;
+    width: 300px;
+    margin: auto;
+    border: solid 1px rgb(195, 173, 173);
+}
+
+
+.productimage .imsize{
+    height: 80%;
+    border-bottom: solid 1px rgb(195, 173, 173);
+    transition: all 0.2s;
+}
+
+.productimage .imsize:hover{
+    transform: scale(1.0); 
+    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.462);
+}
+
+
+.productimage .pname{
+    
+    height: 10%;
+    width: 100%;
+    display: flex;
+}
+.productimage .pprice{
+    height: 10%;
+    width: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.855);
+    text-align: center;
+    padding-top: 10px;
+}
+.productimage .brand{
+    width: 60%;
+    height: 100%;
+    color: black;
+    padding-top: 7px;
+    padding-left: 10px;
+    font-size: 20px;
+
+}
+.productimage .model{
+    width: 40%;
+    height: 100%;
+    color: black;
+    padding: 10px;
+    font-size: 15px;
+
+}
+.productimage img{
+    height: 100%;
+    width: 100%;
+    
+}
+.poster img{
+    width: 100%;
+    height: 100%;
+}
+
+.footer{
+    height: 70vh;
+    width: 100%;
+    background-color: black;
+    margin-top: 150px;
+    padding-top: 100px;
+    
+}
+.footer .info{
+    height: 250px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 2px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.footer .info a{
+    margin: auto;
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.footer a:hover{
+    color: red;
+}
+.footer h1{
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 40px;
+}
